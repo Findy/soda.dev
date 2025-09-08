@@ -1,0 +1,57 @@
+/* 画像を大きく表示 */
+.md-content img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block;
+    margin: 1em auto;
+}
+
+/* メインコンテンツエリアを広げる */
+.md-content {
+    max-width: none !important;
+}
+
+.md-content__inner {
+    max-width: none !important;
+    margin: 0 2rem !important;
+}
+
+/* サイドバーを非表示にする（モバイル以外） */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none !important;
+    }
+}
+
+/* コンテンツエリアをフル幅に */
+.md-main__inner {
+    display: block !important;
+    max-width: none !important;
+}
+
+.md-content__inner:not(.md-typeset) {
+    max-width: none !important;
+}
+
+/* グリッドレイアウトを調整 */
+.md-grid {
+    max-width: none !important;
+    margin: 0 auto !important;
+}
+
+/* タブレット以上の画面サイズでコンテンツ幅を最大化 */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--secondary {
+        margin-left: 0 !important;
+    }
+    
+    .md-content {
+        margin-left: 0 !important;
+    }
+}
+
+/* ライトボックス有効時の画像スタイル */
+.md-content img[loading] {
+    cursor: zoom-in;
+}

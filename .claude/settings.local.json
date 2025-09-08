@@ -4,7 +4,9 @@
       "Bash(mkdocs:*)",
       "Bash(python:*)",
       "Bash(pip install:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(lsof:*)",
+      "Bash(open http://localhost:8000)"
     ],
     "deny": [],
     "ask": []

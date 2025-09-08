@@ -7,10 +7,16 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
-    - toc.integrate
+    - navigation.instant
+    - navigation.sections
     - content.code.copy
     - content.tabs.link          # タブ切替を強化
-    - content.image.lightbox     # 画像クリックで拡大
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/navigation.js
 
 markdown_extensions:
   - admonition
