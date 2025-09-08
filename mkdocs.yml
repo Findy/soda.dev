@@ -1,0 +1,17 @@
+site_name: SODA.dev
+site_url: https://findy.github.io/soda.dev/
+repo_url: https://github.com/Findy/soda.dev
+repo_name: Findy/soda.dev
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - toc.integrate
+    - content.code.copy
+
+nav:
+  - Home: index.md
