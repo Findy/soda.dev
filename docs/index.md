@@ -1,7 +1,13 @@
 # SODA.dev
 
-SODA.dev は **SODAフレームワークに関するオープンナレッジ**を公開するサイトです。
+以下の図は2パターンあります。タブで切り替えてご覧ください。
 
-![SODA Overview](images/SODA/rev.01.png)
+=== "SODA (rev.01)"
+![SODA rev.01](images/SODA/rev.01.png){ loading=lazy }
 
-👉 今後、この図の各要素をクリックすると説明が出るインタラクティブ版に拡張していきます。
+<small>全体の構造を俯瞰する図。各領域の関係性を一望できます。</small>
+
+=== "SODA Prototype (rev.02)"
+![SODA Prototype rev.02](images/SODA_prototype/rev.02.png){ loading=lazy }
+
+<small>プロトタイプ構成の図。実務フローや改善ループの観点で利用できます。</small>

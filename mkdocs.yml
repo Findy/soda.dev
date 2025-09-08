@@ -1,8 +1,3 @@
-site_name: SODA.dev
-site_url: https://findy.github.io/soda.dev/
-repo_url: https://github.com/Findy/soda.dev
-repo_name: Findy/soda.dev
-
 theme:
   name: material
   language: ja
@@ -12,6 +7,19 @@ theme:
     - navigation.tracking
     - toc.integrate
     - content.code.copy
+    - content.tabs.link          # タブ切替を強化
+    - content.image.lightbox     # 画像クリックで拡大
 
-nav:
-  - Home: index.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - tables
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.tabbed              # タブ機能を有効化
