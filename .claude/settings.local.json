@@ -6,7 +6,8 @@
       "Bash(pip install:*)",
       "WebSearch",
       "Bash(lsof:*)",
-      "Bash(open http://localhost:8000)"
+      "Bash(open http://localhost:8000)",
+      "Bash(pip show:*)"
     ],
     "deny": [],
     "ask": []

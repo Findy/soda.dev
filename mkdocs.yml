@@ -6,7 +6,6 @@ theme:
   logo: assets/logo.svg  # ロゴファイルのパス（後で実際のファイル名に変更）
   favicon: assets/favicon.png  # ファビコンのパス（後で実際のファイル名に変更）
   features:
-    - navigation.tabs
     - navigation.top
     - navigation.tracking
     - navigation.instant
