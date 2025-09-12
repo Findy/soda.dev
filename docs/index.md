@@ -10,6 +10,6 @@
 
 === "SODA Prototype (rev.02)"
 
-    ![SODA Prototype rev.02](images/SODA_prototype/rev.02.svg){ loading=lazy }
+    ![SODA Prototype ver.1.0](images/SODA_prototype/SODA prototype ver.1.0.svg){ loading=lazy }
 
     <small>プロトタイプ構成の図。実務フローや改善ループの観点で利用できます。</small>
