@@ -22,7 +22,8 @@ extra_javascript:
 markdown_extensions:
   - admonition
   - toc:
-      permalink: true
+      permalink: false
+      toc_depth: 0
   - footnotes
   - tables
   - attr_list
