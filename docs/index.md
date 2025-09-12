@@ -8,7 +8,7 @@
 
     <small>全体の構造を俯瞰する図。各領域の関係性を一望できます。</small>
 
-=== "SODA Prototype (rev.02)"
+=== "SODA Prototype (ver.1.0)"
 
     ![SODA Prototype ver.1.0](images/SODA_prototype/SODA prototype ver.1.0.svg){ loading=lazy }
 
