@@ -4,13 +4,13 @@
 
 === "SODA knowledge map (ver.1.0)"
 
-    ![SODA knowledge map ver.1.0](images/SODA_prototype/SODA prototype ver.1.0.svg){ loading=lazy }
+    ![SODA knowledge map ver.1.0](images/SODA_prototype/SODA knowledge map (ver.1.0).svg){ loading=lazy }
 
     <small>プロトタイプ構成の図。実務フローや改善ループの観点で利用できます。</small>
 
 === "SODA circulation model (rev.01)"
 
-    ![SODA circulation model rev.01](images/SODA/rev.01.svg){ loading=lazy }
+    ![SODA circulation model rev.01](images/SODA/SODA circulation model (rev.01).svg){ loading=lazy }
 
     <small>全体の構造を俯瞰する図。各領域の関係性を一望できます。</small>
 
