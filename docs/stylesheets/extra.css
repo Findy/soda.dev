@@ -62,3 +62,9 @@
     height: 2rem !important;  /* 32px */
     width: auto !important;
 }
+
+/* フッターのソーシャルアイコンを大きく */
+.md-social__link svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
