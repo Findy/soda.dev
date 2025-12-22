@@ -56,23 +56,7 @@
     cursor: zoom-in;
 }
 
-/* ロゴのサイズ調整（必要に応じて変更） */
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-    height: 2rem !important;  /* 32px */
-    width: auto !important;
-}
-
 /* フッターのソーシャルアイコンを大きく */
-.md-footer-social__link svg,
-.md-social__link svg {
-    width: 2rem !important;
-    height: 2rem !important;
-}
-
-.md-footer-social__link,
 .md-social__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    transform: scale(1.5) !important;
 }
