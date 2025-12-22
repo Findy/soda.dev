@@ -30,7 +30,7 @@
 <h3>SODA circulation model</h3>
 <ul>
 <li><strong>ver.1.0</strong> (現在) - 最新版</li>
-<li><strong>rev.01</strong> - 旧バージョン → <a href="images/SODA/SODA circulation model (rev.01).svg" target="_blank">画像を表示</a></li>
+<li><strong>rev.01</strong> - 旧バージョン → <a href="images/SODA/rev.01.svg" target="_blank">画像を表示</a></li>
 </ul>
 <br>
 <p>📋 <a href="changelog">詳細な変更履歴を見る</a></p>
