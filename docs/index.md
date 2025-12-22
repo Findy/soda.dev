@@ -1,18 +1,19 @@
 # SODA.dev
 
-以下の図は2パターンあります。タブで切り替えてご覧ください。
+**SODA（Software Outcome Delivery Architecture）** は、プロダクト組織を構造的に捉え、可視化するフレームワークです。経営層・マネジャー・エンジニアが共通の理解を持ち、組織のケイパビリティを把握して正確な経営判断と事業成長を支援します。
+
+2種類の図を用意しています。タブで切り替えてご覧ください。
+
+- **SODA knowledge map**: プロトタイプ構成図。実務フローや改善ループの観点で利用できます。
+- **SODA circulation model**: 全体俯瞰図。各領域の関係性を一望できます。
 
 === "SODA knowledge map (ver.1.0)"
 
     ![SODA knowledge map ver.1.0](images/SODA_prototype/SODA knowledge map (ver.1.0).svg){ loading=lazy }
 
-    <small>プロトタイプ構成の図。実務フローや改善ループの観点で利用できます。</small>
-
 === "SODA circulation model (ver.1.0)"
 
     ![SODA circulation model ver.1.0](images/SODA/SODA circulation model (ver.1.0).svg){ loading=lazy }
-
-    <small>全体の構造を俯瞰する図。各領域の関係性を一望できます。</small>
 
 ---
 
