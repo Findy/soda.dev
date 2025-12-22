@@ -64,7 +64,15 @@
 }
 
 /* フッターのソーシャルアイコンを大きく */
+.md-footer-social__link svg,
 .md-social__link svg {
-    width: 1.5rem !important;
-    height: 1.5rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.md-footer-social__link,
+.md-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
