@@ -1,4 +1,6 @@
 site_name: SODA.dev
+repo_url: https://github.com/Findy/soda.dev
+repo_name: Findy/soda.dev
 
 theme:
   name: material
