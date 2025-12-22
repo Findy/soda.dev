@@ -17,7 +17,7 @@ jobs:
       - name: Install MkDocs + Material
         run: |
           pip install --upgrade pip
-          pip install mkdocs-material
+          pip install mkdocs-material mkdocs-glightbox
       - name: Build site
         run: mkdocs build --site-dir site
       - name: Upload artifact
