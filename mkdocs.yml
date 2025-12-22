@@ -1,6 +1,4 @@
 site_name: SODA.dev
-repo_url: https://github.com/Findy/soda.dev
-repo_name: Findy/soda.dev
 
 theme:
   name: material
@@ -18,6 +16,12 @@ theme:
 plugins:
   - search
   - glightbox
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Findy/soda.dev
+      name: GitHub
 
 extra_css:
   - stylesheets/extra.css

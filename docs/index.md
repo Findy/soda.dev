@@ -1,7 +1,6 @@
 # SODA.dev
 
 **SODA（Software Outcome Delivery Architecture）** は、プロダクト組織を構造的に捉え、可視化するフレームワークです。経営層・マネジャー・エンジニアが共通の理解を持ち、組織のケイパビリティを把握して正確な経営判断と事業成長を支援します。
-
 SODAは [SODA Community](https://findy.github.io/soda.community/) によって運営・開発されています。
 
 2種類のビュー（視点）を用意しています。タブで切り替えてご覧ください。
