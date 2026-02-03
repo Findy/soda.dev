@@ -7,7 +7,7 @@ SODAは [SODA Community](https://findy.github.io/soda.community/) によって�
 2種類のビュー（視点）を用意しています。タブで切り替えてご覧ください。
 
 - **SODA knowledge map**: Software Outcome Delivery Architecture の考え方に基づき、ソフトウェアプロダクト開発に必要な技術的・組織的・プロダクト視点の知識を体系的に整理したナレッジマップです。チームが「何を知り、何を身につけるべきか」を俯瞰的に理解することを目的としています。
-- **SODA circulation model**: Software Outcome Delivery Architecture の考え方に基づき、知識や測定結果がアクションに活用され、その結果がフィードバックとして組織に戻り、継続的に改善が進む流れを示したモデルです。ソフトウェア開発における意思決定と成果創出を、血液循環のような循環構造として捉えることを目的としています。
+- **SODA circulation model**: Software Outcome Delivery Architecture の考え方に基づき、知識や測定結果がアクションに活用され、その結果がフィードバックとして組織に戻り、継続的に改善が進む流れを示したモデルです。ソフトウェア開発における意思決定と成果創出を、血液循環のような構造として捉えることを目的としています。
 
 === "SODA knowledge map (ver.1.0)"
 
