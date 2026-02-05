@@ -28,6 +28,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/navigation.js
+  - javascripts/knowledge-map-modal.js
 
 markdown_extensions:
   - admonition

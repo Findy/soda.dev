@@ -60,3 +60,168 @@
 .md-social__link {
     transform: scale(1.5) !important;
 }
+
+/* Knowledge Map モーダルスタイル */
+.km-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.km-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: slideIn 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.km-modal-close {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.km-modal-close:hover,
+.km-modal-close:focus {
+    color: #000;
+}
+
+.km-modal-body {
+    padding: 30px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.km-modal-body h1 {
+    margin-top: 0;
+    color: #1976d2;
+    font-size: 2em;
+    border-bottom: 2px solid #1976d2;
+    padding-bottom: 10px;
+}
+
+.km-modal-body h2 {
+    color: #424242;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.km-modal-body h3 {
+    color: #616161;
+    font-size: 1.2em;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.km-modal-body p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.km-modal-body ul, .km-modal-body ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+.km-modal-body li {
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.km-modal-body hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2em 0;
+}
+
+.km-modal-body strong {
+    font-weight: 600;
+    color: #1976d2;
+}
+
+/* Learn moreボタン */
+.km-learn-more-container {
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #e0e0e0;
+}
+
+.km-learn-more-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #1976d2;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+}
+
+.km-learn-more-btn:hover {
+    background-color: #1565c0;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4);
+    transform: translateY(-2px);
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .km-modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .km-modal-body {
+        padding: 20px;
+    }
+
+    .km-modal-close {
+        right: 15px;
+        top: 10px;
+        font-size: 28px;
+    }
+}
