@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // HTMLページからコンテンツを読み込む関数
     async function loadMarkdown(filename) {
         try {
-            const response = await fetch(`/soda-knowledge-map/${filename}/`);
+            const response = await fetch(`soda-knowledge-map/${filename}/`);
             if (!response.ok) {
                 throw new Error('ファイルの読み込みに失敗しました');
             }
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 learnMoreButton.className = 'km-learn-more-container';
                 // -modalを-detailに置き換え
                 const detailPath = filename.replace('-modal', '-detail');
-                const detailUrl = `/soda-knowledge-map/${detailPath}/`;
+                const detailUrl = `soda-knowledge-map/${detailPath}/`;
                 learnMoreButton.innerHTML = `
                     <a href="${detailUrl}" class="km-learn-more-btn">
                         Learn more
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             modalBody.innerHTML = `
                 <p style="color: #d32f2f;">エラー: ${error.message}</p>
-                <p>ファイルパス: /soda-knowledge-map/${filename}/</p>
+                <p>ファイルパス: soda-knowledge-map/${filename}/</p>
             `;
         }
     }
