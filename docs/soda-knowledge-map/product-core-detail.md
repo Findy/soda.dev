@@ -1,0 +1,3 @@
+# product-core - 詳細
+
+Coming soon...

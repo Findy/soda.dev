@@ -1,0 +1,3 @@
+# innovation-model - 詳細
+
+Coming soon...

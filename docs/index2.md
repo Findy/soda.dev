@@ -11,11 +11,7 @@ SODAは [SODA Community](https://findy.github.io/soda.community/) によって�
 
 === "SODA knowledge map (ver.1.0)"
 
-    ![SODA knowledge map ver.1.0](images/SODA_prototype/SODA knowledge map (ver.1.0).svg){ loading=lazy }
-
-    <div style="margin-top: 20px; text-align: center;">
-        <span id="mission-purpose" style="display: inline-block; padding: 12px 24px; background-color: #DFF2FC; border: 2px solid #1976d2; border-radius: 8px; font-weight: bold; color: #1976d2; cursor: pointer; transition: all 0.3s ease; user-select: none;">Mission / Purpose</span>
-    </div>
+    <object id="knowledge-map-svg" type="image/svg+xml" data="../images/SODA_prototype/SODA%20knowledge%20map%20(ver.1.0).svg" style="width: 100%; height: auto;"></object>
 
 === "SODA circulation model (ver.1.0)"
 

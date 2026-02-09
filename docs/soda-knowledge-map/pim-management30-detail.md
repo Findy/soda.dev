@@ -1,0 +1,3 @@
+# pim-management30 - 詳細
+
+Coming soon...

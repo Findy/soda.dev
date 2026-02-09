@@ -114,30 +114,134 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // SVG要素にクリックイベントを追加
-    function attachClickHandlers() {
-        // Mission / Purpose要素
-        const missionPurposeElement = document.getElementById('mission-purpose');
-        if (missionPurposeElement) {
-            missionPurposeElement.style.cursor = 'pointer';
-            missionPurposeElement.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                openModal();
-                loadMarkdown('mission-purpose-modal');
+    // SVG object内の要素にクリックイベントを追加
+    function attachClickHandlers(svgDoc) {
+        // モーダル対象のID一覧（子要素を先に登録し、親は最後）
+        var targets = [
+            // Instrument Flight System
+            'ifs-playbook',
+            'ifs-evidence-viewer',
+            'ifs-project-value',
+            'ifs-outcome-delivery',
+            'ifs-quality-value',
+            'ifs-team-performance',
+            'instrument-flight-system',
+            // Product Core
+            'pc-mission-purpose',
+            'pc-vision',
+            'pc-value',
+            'product-core',
+            // Product Quality Management
+            'pqm-qa2aq',
+            'pqm-square',
+            'pqm-kano-model',
+            'pqm-software-engineering',
+            'product-quality-management',
+            // Product Management
+            'pdm-business-strategy',
+            'pdm-userstory-mapping',
+            'pdm-mobius-outcome-delivery',
+            'pdm-ux',
+            'pdm-product-development-team',
+            'pdm-golden-circle',
+            'pdm-biz-continuity',
+            'pdm-qcds',
+            'pdm-outcome',
+            'product-management',
+            // Software Process
+            'sp-aidlc',
+            'sp-devops',
+            'sp-agiletesting',
+            'sp-agile',
+            'software-process',
+            // Project Management
+            'pjm-prince2',
+            'pjm-pmbok',
+            'project-management',
+            // Team Management
+            'tm-team-topology',
+            'tm-devex',
+            'team-management',
+            // Product Business Management
+            'pbm-management',
+            'pbm-org-development',
+            'pbm-hr-management',
+            'pbm-goal-management',
+            'pbm-tqm',
+            'product-business-management',
+            // Process Improvement Management
+            'pim-dora-model',
+            'pim-cmmi',
+            'pim-management30',
+            'pim-ebm',
+            'pim-value-stream-mapping',
+            'process-improvement-management',
+            // Innovation Model
+            'im-seci-spiral',
+            'im-scrum',
+            'innovation-model',
+        ];
+
+        targets.forEach(function(id) {
+            var element = svgDoc.getElementById(id);
+            if (element) {
+                element.style.cursor = 'pointer';
+                element.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    openModal();
+                    loadMarkdown(id + '-modal');
+                });
+            }
+            // _2 重複要素（SVGエクスポート時の複製）にも同じハンドラーを設定
+            var element2 = svgDoc.getElementById(id + '_2');
+            if (element2) {
+                element2.style.cursor = 'pointer';
+                element2.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    openModal();
+                    loadMarkdown(id + '-modal');
+                });
+            }
+        });
+    }
+
+    // SVG objectの読み込み完了時にイベントを設定
+    function initSvgObject() {
+        const svgObject = document.getElementById('knowledge-map-svg');
+        if (svgObject) {
+            svgObject.addEventListener('load', function() {
+                const svgDoc = svgObject.contentDocument;
+                if (svgDoc) {
+                    attachClickHandlers(svgDoc);
+                }
             });
+            // すでに読み込み済みの場合
+            if (svgObject.contentDocument && svgObject.contentDocument.rootElement) {
+                attachClickHandlers(svgObject.contentDocument);
+            }
         }
     }
 
-    // ページ読み込み時とタブ切り替え時にイベントを設定
-    attachClickHandlers();
+    initSvgObject();
+
+    // ブラウザの戻る/進むで再初期化
+    window.addEventListener('popstate', function() {
+        setTimeout(initSvgObject, 200);
+    });
+
+    // MkDocs Material instant navigation対応
+    if (typeof document$ !== 'undefined') {
+        document$.subscribe(function() {
+            setTimeout(initSvgObject, 200);
+        });
+    }
 
     // タブ切り替えを監視
     const tabInputs = document.querySelectorAll('.tabbed-set input[type="radio"]');
     tabInputs.forEach(input => {
         input.addEventListener('change', function() {
             // タブが切り替わった後、少し待ってからハンドラーを再設定
-            setTimeout(attachClickHandlers, 100);
+            setTimeout(initSvgObject, 100);
         });
     });
 

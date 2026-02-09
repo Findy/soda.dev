@@ -1,0 +1,3 @@
+# pim-dora-model - 詳細
+
+Coming soon...
