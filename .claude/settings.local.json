@@ -7,7 +7,10 @@
       "WebSearch",
       "Bash(lsof:*)",
       "Bash(open http://localhost:8000)",
-      "Bash(pip show:*)"
+      "Bash(pip show:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfix: SVGとモーダルのパスを相対パスに統一（ローカル/GitHub Pages両対応）\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

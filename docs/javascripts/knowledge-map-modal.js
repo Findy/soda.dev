@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Learn moreボタンを追加
                 const learnMoreButton = document.createElement('div');
                 learnMoreButton.className = 'km-learn-more-container';
-                // -modalを-detailに置き換え
-                const detailPath = filename.replace('-modal', '-detail');
+                // -summaryを-detailに置き換え
+                const detailPath = filename.replace('-summary', '-detail');
                 const detailUrl = `soda-knowledge-map/${detailPath}/`;
                 learnMoreButton.innerHTML = `
                     <a href="${detailUrl}" class="km-learn-more-btn">
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 element.addEventListener('click', function(e) {
                     e.stopPropagation();
                     openModal();
-                    loadMarkdown(id + '-modal');
+                    loadMarkdown(id + '-summary');
                 });
             }
             // _2 重複要素（SVGエクスポート時の複製）にも同じハンドラーを設定
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 element2.addEventListener('click', function(e) {
                     e.stopPropagation();
                     openModal();
-                    loadMarkdown(id + '-modal');
+                    loadMarkdown(id + '-summary');
                 });
             }
         });
