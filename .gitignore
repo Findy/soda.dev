@@ -1,2 +1,6 @@
 .DS_Store
 site/
+
+# ローカル専用設定（MCP接続情報・個人設定）
+.mcp.json
+.claude/settings.local.json
