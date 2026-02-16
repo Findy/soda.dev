@@ -58,55 +58,6 @@ mkdocs build          # サイトビルド（出力先: site/）
 └── .github/workflows/pages.yml   # CI/CD
 ```
 
-## コーディング規約
-
-### コミットメッセージ
-
-- Conventional Commits 形式を使用: `fix:`, `feat:`, `docs:` など
-- 日本語での記述を推奨
-- 例: `fix: SVGとモーダルのパスを相対パスに統一`
-
-### ブランチ運用
-
-- `main` ブランチへの直接コミット（トランクベース開発）
-
-### ファイル命名
-
-- ナレッジマップのID属性は **ケバブケース** で統一（Figmaで管理されているSVG画像のレイヤー名として埋め込まれている）
-- 各ID属性に対応するMarkdownファイルは必ず `-summary.md`（サマリー）と `-detail.md`（詳細）のペアで作成
-- ID属性のプレフィックス規則:
-  - `ifs-*` : Instrument Flight System
-  - `pc-*` : Product Core
-  - `pqm-*` : Product Quality Management
-  - `pdm-*` : Product Management
-  - `sp-*` : Software Process
-  - `pjm-*` : Project Management
-  - `tm-*` : Team Management
-  - `pbm-*` : Product Business Management
-  - `pim-*` : Process Improvement Management
-  - `im-*` : Innovation Model
-
-### パス指定
-
-- SVG やモーダルコンテンツのパスは **相対パス** を使用する（ローカル環境と GitHub Pages の両方で動作させるため）
-
-## 設計方針
-
-### モーダルベースの情報開示
-
-SVG ナレッジマップをクリックすると軽量なモーダルが開き、概要を表示する。
-「Learn more」ボタンで詳細ページへ遷移する。ページ遷移を最小限に抑え、ブラウジング体験を重視。
-
-### デュアルコンテンツ戦略
-
-各トピックに summary（概要）と detail（詳細）の 2 ファイルを用意し、モーダルで表示する。情報の粒度を分離する。
-
-### キーボードナビゲーション
-
-- 矢印キー: タブ切り替え
-- 数字キー（1, 2）: タブジャンプ
-- ESC: モーダルを閉じる
-
 ## やってほしいこと
 
 - パス指定は相対パスを使う（ローカルと GitHub Pages 両対応のため）
