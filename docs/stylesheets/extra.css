@@ -7,7 +7,7 @@
     margin: 1em auto;
 }
 
-/* メインコンテンツエリアを広げる */
+/* メインコンテンツエリアを広げる（デフォルト：フル幅レイアウト） */
 .md-content {
     max-width: none !important;
 }
@@ -40,14 +40,47 @@
     margin: 0 auto !important;
 }
 
-/* タブレット以上の画面サイズでコンテンツ幅を最大化 */
+/* デフォルト：TOCサイドバーを非表示（フル幅ページ用） */
 @media screen and (min-width: 76.25em) {
     .md-sidebar--secondary {
-        margin-left: 0 !important;
+        display: none !important;
     }
-    
+
     .md-content {
         margin-left: 0 !important;
+    }
+}
+
+/* --- detail ページ用：TOCサイドバーを表示 --- */
+/* body.detail-page は detail-toc.js で付与される */
+body.detail-page .md-sidebar--secondary {
+    display: block !important;
+}
+
+@media screen and (min-width: 76.25em) {
+    body.detail-page .md-main__inner {
+        display: flex !important;
+        max-width: 1400px !important;
+        margin: 0 auto !important;
+    }
+
+    body.detail-page .md-content {
+        max-width: none !important;
+        min-width: 0;
+        flex: 1;
+        order: 2;
+    }
+
+    body.detail-page .md-content__inner {
+        max-width: none !important;
+        margin: 0 1.5rem !important;
+    }
+
+    body.detail-page .md-sidebar--secondary {
+        flex-shrink: 0;
+        width: 13rem;
+        margin-left: 0 !important;
+        order: 1;
     }
 }
 

@@ -1,12 +1,12 @@
 # DORA Core Model
 
-DORA Core Model は、DORA（DevOps Research and Assessment）の研究を通じて繰り返し実証された知見を体系化した予測モデルです。ケイパビリティ、パフォーマンス、アウトカムの3層で構成され、それぞれが次の層を予測する構造になっています。
+DORA Core Model は、DORA（DevOps Research and Assessment）の研究を通じて繰り返し実証された知見を体系化した予測モデルです。ケイパビリティ（Capabilities）、パフォーマンス（Performance）、アウトカム（Outcomes）の3つの要素で構成され、それらを結ぶ予測経路（predictive pathways）が示されています。
 
-## 3層の構造
+## モデルの構成要素
 
-ケイパビリティ（継続的デリバリー、テスト自動化、トランクベース開発、組織文化など20以上）への投資が、ソフトウェアデリバリーのパフォーマンスを向上させ、その結果として組織の成果や従業員の幸福度といったアウトカムにつながることが、統計的に確認されています。
+ケイパビリティは「Climate for learning」「Fast flow」「Fast feedback」の3グループに整理されており、Continuous delivery、Test automation、Generative culture など18のプラクティスが含まれます。これらのケイパビリティへの投資が、パフォーマンスを予測し、さらにパフォーマンスがアウトカムを予測することが統計的に確認されています。
 
-パフォーマンスの測定には、スループット（変更リードタイム、デプロイ頻度）と安定性（変更失敗率、復旧時間、手戻り率）の指標が使われます。これらは Four Keys（+ 手戻り率）として広く知られています。
+パフォーマンスは「Software delivery（Four key metrics）」と「Reliability（SLOs）」の2領域で測定されます。アウトカムは「Organizational performance」と「Well-being」で構成されます。
 
 ## モデルの特徴
 

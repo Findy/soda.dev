@@ -27,14 +27,15 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
+  - javascripts/detail-toc.js
   - javascripts/navigation.js
   - javascripts/knowledge-map-modal.js
 
 markdown_extensions:
   - admonition
   - toc:
-      permalink: false
-      toc_depth: 0
+      permalink: true
+      toc_depth: 3
   - footnotes
   - tables
   - attr_list
