@@ -169,7 +169,7 @@ Core Model は保守的に進化する設計ですが、ソフトウェアデリ
 - **2022年** — セキュリティプラクティスの最大の予測因子は技術的な施策ではなく、組織文化であることが示された
 - **2023年** — ユーザー中心性（User-centricity）がパフォーマンスの40%向上を予測することが確認された
 - **2024年** — プラットフォームエンジニアリングとユーザー中心性が成功を推進する要因として注目された。AI 関連のケイパビリティ（AI にアクセス可能な内部データ、明確な AI 方針など）が新たに追加された
-- **2025年** — 年次レポートの名称が従来の「Accelerate State of DevOps Report」から「**State of AI-assisted Software Development**」に変更された。AI がソフトウェア開発に与える影響を中心テーマに据え、DORA AI Capabilities Model が新たに提示された。主要な知見として、AI は増幅器（amplifier）として機能し、最大のリターンは基盤となる社会技術システム（sociotechnical systems）への投資から得られることが示された
+- **2026年** — 年次レポートの名称が従来の「Accelerate State of DevOps Report」から「**State of AI-assisted Software Development**」に変更された。AI がソフトウェア開発に与える影響を中心テーマに据え、DORA AI Capabilities Model が新たに提示された。主要な知見として、AI は増幅器（amplifier）として機能し、最大のリターンは基盤となる社会技術システム（sociotechnical systems）への投資から得られることが示された
 
 ---
 
