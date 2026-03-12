@@ -18,7 +18,7 @@ DORA Core Model は、行動科学の手法を用いて「働き方（ways of wo
 
 ```
 ケイパビリティ（Capabilities）
-    ↓ predict
+    ↓ predicts
 パフォーマンス（Performance）
     ↓ predicts
 アウトカム（Outcomes）
@@ -28,7 +28,7 @@ DORA Core Model は、行動科学の手法を用いて「働き方（ways of wo
 
 ### ケイパビリティ（Capabilities）
 
-ケイパビリティは、ソフトウェアデリバリーにおける「働き方」を表します。DORA Core Model v2.1.0 では、以下の3グループに整理されています。
+ケイパビリティは、ソフトウェアデリバリーにおける「働き方」を表します。DORA Core Model v2.1.0 では、次の3グループに整理されています。
 
 #### Climate for learning
 
