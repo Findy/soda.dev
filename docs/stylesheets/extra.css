@@ -40,24 +40,33 @@
     margin: 0 auto !important;
 }
 
-/* デフォルト：TOCサイドバーを非表示（フル幅ページ用） */
-@media screen and (min-width: 76.25em) {
-    .md-sidebar--secondary {
-        display: none !important;
-    }
-
-    .md-content {
-        margin-left: 0 !important;
-    }
+/* TOCサイドバー：全ページ・全画面幅でデフォルト非表示 */
+.md-sidebar--secondary {
+    display: none !important;
 }
 
-/* --- detail ページ用：TOCサイドバーを表示 --- */
+.md-content {
+    margin-left: 0 !important;
+}
+
+/* --- detail ページ用：TOCサイドバーをデスクトップのみ表示 --- */
 /* body.detail-page は detail-toc.js で付与される */
-body.detail-page .md-sidebar--secondary {
-    display: block !important;
-}
-
 @media screen and (min-width: 76.25em) {
+    body.detail-page .md-sidebar--secondary {
+        display: block !important;
+        flex-shrink: 0;
+        width: 12rem;
+        margin-left: 0 !important;
+        margin-right: 1rem;
+        order: 1;
+        position: sticky;
+        top: 3.6rem;
+        align-self: flex-start;
+        height: auto !important;
+        max-height: calc(100vh - 3.6rem);
+        overflow-y: auto;
+    }
+
     body.detail-page .md-main__inner {
         display: flex !important;
         max-width: 1400px !important;
@@ -75,13 +84,11 @@ body.detail-page .md-sidebar--secondary {
         max-width: none !important;
         margin: 0 1.5rem !important;
     }
+}
 
-    body.detail-page .md-sidebar--secondary {
-        flex-shrink: 0;
-        width: 13rem;
-        margin-left: 0 !important;
-        order: 1;
-    }
+/* モーダル内の見出しパーマリンク（¶）を非表示 */
+.km-modal-body .headerlink {
+    display: none !important;
 }
 
 /* ライトボックス有効時の画像スタイル */
