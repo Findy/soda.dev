@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'pbm-tqm',
             'product-business-management',
             // Process Improvement Management
-            'pim-dora-model',
+            'pim-dora-core-model',
             'pim-cmmi',
             'pim-management30',
             'pim-ebm',
