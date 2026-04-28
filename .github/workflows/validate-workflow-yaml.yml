@@ -1,0 +1,38 @@
+name: Validate Workflow YAML
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    paths:
+      - ".github/workflows/**"
+      - ".github/actions/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate Workflow YAML
+    runs-on: arm64-2-core-ubuntu-24.04
+    timeout-minutes: 10
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2 # zizmor: ignore[artipacked]
+
+      - name: Validate workflow YAML
+        uses: Findy/findy-github-actions-workflow-yaml-schema-validator@4b95965e3727def2c1fc4f8a34989957f0d1a8f8 # main
+        with:
+          target: .github/workflows/
+          execute_actionlint: true
+          execute_ghalint: true
+          execute_zizmor: true
+          output_pr_comment: true
