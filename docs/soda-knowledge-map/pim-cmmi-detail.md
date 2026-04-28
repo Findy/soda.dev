@@ -41,12 +41,13 @@ CMMIはv2.0以降、アジャイル／DevOpsと矛盾しない設計を明示す
 
 一方、ソフトウェアデリバリーの日常的な改善判断という用途では、**チーム単位で測定・改善できる** 後発モデル（[DORA Core Model](pim-dora-core-model-detail.md)など）が広く使われるようになっています。
 
-!!! warning "モデルドキュメントの公開方針の変化（v1.3まで無料 → v2.0以降は有償）"
-    CMMI v1.3までのモデル本文はSEIのWebサイトから **PDFとして無料で公開** されており、現在も[SEIのライブラリ](https://resources.sei.cmu.edu/library/)からレガシー資料として参照できます。
+### モデルドキュメントの入手方法（v1.3までは無料、v2.0以降は有償）
 
-    一方、**CMMI v2.0（2018年）以降はモデル本文がISACAの有償ライセンス制** に移行しました。モデル本体にアクセスするには[CMMI Online Model Viewer](https://cmmiinstitute.com/products/cmmi/content-release)の年次サブスクリプションまたはEnterprise Licenseの購入が必要で、PDF版も有償ライセンスに含まれる形で提供されます。最新版のv3.0も同じ有償提供方式です。
+CMMI v1.3までのモデル本文はSEIのWebサイトから **PDFとして無料で公開** されており、現在も[SEIのライブラリ](https://resources.sei.cmu.edu/library/)からレガシー資料として参照できます。
 
-    このため、組織内でモデル本文をそのまま配布したり、社外のドキュメントに本文を引用したりする場合は、ライセンス条項の確認が必須です。本ページのような **概要・解説** はISACAが公開している[Quick Reference Guide](https://www.isaca.org/resources/reference-guide/cmmi-model-quick-reference-guide)など、無償で公開されている二次資料に基づいて構成しています。
+一方、**CMMI v2.0（2018年）以降はモデル本文がISACAの有償ライセンス制** に移行しました。モデル本体にアクセスするには[CMMI Online Model Viewer](https://cmmiinstitute.com/products/cmmi/content-release)の年次サブスクリプションまたはEnterprise Licenseの購入が必要で、PDF版も有償ライセンスに含まれる形で提供されます。最新版のv3.0も同じ有償提供方式です。
+
+このため、組織内でモデル本文をそのまま配布したり、社外のドキュメントに本文を引用したりする場合は、ライセンス条項の確認が必須です。本ページのような **概要・解説** はISACAが公開している[Quick Reference Guide](https://www.isaca.org/resources/reference-guide/cmmi-model-quick-reference-guide)など、無償で公開されている二次資料に基づいて構成しています。
 
 ---
 
