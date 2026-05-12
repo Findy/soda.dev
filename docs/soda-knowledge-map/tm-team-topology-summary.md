@@ -1,3 +1,0 @@
-# tm-team-topology
-
-Coming soon...

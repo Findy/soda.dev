@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'pjm-pmbok',
             'project-management',
             // Team Management
-            'tm-team-topology',
+            'tm-team-topologies',
             'tm-devex',
             'team-management',
             // Product Business Management
