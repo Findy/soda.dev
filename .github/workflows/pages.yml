@@ -17,7 +17,8 @@ jobs:
       - name: Setup Takumi Guard
         uses: flatt-security/setup-takumi-guard-pypi@733047c120b6377fa05fb77f714df8d8cd3a41a9 # v1.0.1
         with:
-          bot-id: ${{ secrets.TAKUMI_GUARD_BOT_ID }}
+          # Secret 取得に失敗した場合は匿名モードへフォールバックする
+          bot-id: ${{ secrets.TAKUMI_GUARD_BOT_ID || '' }}
       - name: Install MkDocs + Material
         run: |
           pip install --upgrade pip
