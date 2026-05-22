@@ -40,7 +40,7 @@ pip config set global.index-url https://pypi.flatt.tech/simple/
 - GitHub Actions の `pip install` が Takumi Guard 経由になり、悪性パッケージを事前にブロックできる
 - Bot ID を使って組織単位の追跡・通知に拡張できる
 - 既存の build コマンドやロック戦略を変更せずに導入できる
-- 将来的に Bot ID を付与するだけで組織連携に拡張できる
+- Secret の取得に失敗しても匿名モードへフォールバックして CI を継続できる
 
 **悪い点:**
 
