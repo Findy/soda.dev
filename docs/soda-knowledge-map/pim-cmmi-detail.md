@@ -4,7 +4,7 @@
 
 CMMI（Capability Maturity Model Integration、能力成熟度モデル統合）は、組織のプロセス能力（capability）と成熟度（maturity）を評価し、継続的に改善するためのフレームワークです。米カーネギーメロン大学のソフトウェア工学研究所（Software Engineering Institute, SEI）が1990年代に開発し、その後CMMI Instituteを経て、2016年以降は **[ISACA](https://www.isaca.org/)** がその知的財産と運営を引き継いでいます。
 
-CMMIは単なるチェックリストではなく、「組織として何を、どの水準で実践しているか」を **プラクティス領域（Practice Area, PA）** の集合と達成レベルで記述するモデルです。最新版は2023年4月にリリースされた **[CMMI v3.0](https://www.isaca.org/about-us/newsroom/press-releases/2023/isaca-updates-cmmi-model-with-three-new-domains-that-help-organizations-improve-quality)** で、開発・サービス・データ・人材・セキュリティ・セーフティ・供給者・バーチャル作業の **8つのドメイン** を統合的に扱える設計になっており、ISO・NIST・アジャイル・DevSecOps・AIなど他の標準や手法とも統合・連携できることがISACA公式に明示されています。世界では14,000以上の評定済み組織がCMMIを活用し、ビジネス目標の設定・達成を報告しています（ISACA / CMMI Institute, 2025）。
+CMMIは単なるチェックリストではなく、「組織として何を、どの水準で実践しているか」を **プラクティス領域（Practice Area, PA）** の集合と達成レベルで記述するモデルです。最新版は2023年4月にリリースされた **[CMMI v3.0](https://cmmiinstitute.com/cmmi)** で、開発・サービス・データ・人材・セキュリティ・セーフティ・供給者・バーチャル作業の **8つのドメイン** を統合的に扱える設計になっており、ISO・NIST・アジャイル・DevSecOps・AIなど他の標準や手法とも統合・連携できることがISACA公式に明示されています。世界では14,000以上の評定済み組織がCMMIを活用し、ビジネス目標の設定・達成を報告しています（ISACA / CMMI Institute, 2025）。
 
 CMMIの主な用途は次の3つです。
 
