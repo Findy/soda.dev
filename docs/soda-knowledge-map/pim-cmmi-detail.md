@@ -26,7 +26,7 @@ CMMIの系譜は、1980年代後半のSW-CMM（Capability Maturity Model for Sof
 | 2010 | CMMI v1.3 — アジャイル開発との親和性に関する補足が追加 |
 | 2016 | ISACAがCMMI Instituteを買収し、運営を引き継ぐ |
 | 2018 | **CMMI v2.0** — プラクティス領域／プラクティスグループの構造へ刷新、パフォーマンス（Performance）志向を強化 |
-| 2020 | DoDが **Software Acquisition Pathway**（DODI 5000.87）を制定し、ソフトウェア調達の主流をAgile / DevSecOpsへ転換 |
+| 2020 | 米国国防省が **Software Acquisition Pathway**（DODI 5000.87）を制定し、ソフトウェア調達の主流をAgile / DevSecOpsへ転換 |
 | 2023 | **CMMI v3.0**（2023年4月）— ドメイン／ビューの拡張、デジタル変革・サイバーセキュリティ・データ管理への対応強化 |
 
 CMMIは「品質・コスト・スケジュールの予測可能性を高め、組織のパフォーマンスを継続的に改善する」という一貫したテーマのもとで進化してきました。v2.0以降は **パフォーマンスとビジネス成果との結びつき** を強調し、アジャイル／DevOpsとも矛盾しない枠組みとして再定義されています。
